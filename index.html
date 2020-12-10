@@ -1,0 +1,9 @@
+---
+layout: home
+title: Peintures
+---
+
+{% assign themes = site.themes | sort: "ordre" %}
+{% for theme in themes %}
+  <a href="{{ theme.url }}"><h2>{{ theme.titre }}</h2></p>
+{% endfor %}
