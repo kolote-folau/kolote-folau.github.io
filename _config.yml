@@ -22,8 +22,8 @@ title: Kolote Folau
 # email: boitacmd@outlook.fr
 description: >- # this means to ignore newlines until "baseurl:"
   Peintures
-baseurl: "https://kolote-folau.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-url: "" # the subpath of your site, e.g. /blog
+url: "https://kolote-folau.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
