@@ -1,6 +1,6 @@
 ---
 layout: category
 code: lorraine
-titre: Lorraine
+titre: Ailleurs en France
 ordre: 40
 ---

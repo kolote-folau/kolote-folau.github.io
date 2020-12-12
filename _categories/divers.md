@@ -2,5 +2,5 @@
 layout: category
 code: divers
 titre: Divers
-ordre: 70
+ordre: 80
 ---
