@@ -14,8 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # phone: (716) 555-5555
 
 # homepage tiles
-tiles-source: categories # accepts "posts" or "pages" or "categories"
-tiles-count: 7
+tiles-source: categories
 
 collections:
   categories:

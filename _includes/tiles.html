@@ -5,13 +5,24 @@
 {% endif %} -->
 {% assign tiles = site.categories | sort: "ordre" %}
 <section id="one" class="tiles">
-  {% for tile in tiles limit:site.tiles-count %}
+  {% for tile in tiles %}
+
+  {% capture path %}peintures/{{ tile.code }}{% endcapture %}
+  {% for peinture in site.static_files %}
+    {% if peinture.path contains path %}
+      {% assign image = peinture.path %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
   <article>
     <span class="image">
-      <img src="{{ tile.image }}" alt="" />
+      <img src="{{ image }}" alt="Peinture de {{ tile.title }}" />
     </span>
     <header class="major">
-      <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+      <h3><a href="{{ tile.url  | relative_url }}" class="link">
+        {{ tile.title }}
+      </a></h3>
       <p>{{ tile.description }}</p>
     </header>
   </article>

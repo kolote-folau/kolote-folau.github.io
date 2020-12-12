@@ -11,8 +11,7 @@
 <body>
 
     {% include header.html %} 
-    
-    
+
 <!-- Main -->
 <div id="main" class="alt">
 
@@ -22,13 +21,13 @@
 		<header class="major">
 			<h1>{{ page.title }}</h1>
 		</header>
-		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+		
 		{{ content }}
 
 		{% capture path %}peintures/{{ page.code }}{% endcapture %}
 		{% for peinture in site.static_files %}
 			{% if peinture.path contains path %}
-				<img src="{{ site.baseurl }}{{ peinture.path }}" alt="{{ page.titre }}" />
+				<img src="{{ peinture.path }}" alt="{{ page.titre }}" />
 			{% endif %}
 		{% endfor %}
 		
