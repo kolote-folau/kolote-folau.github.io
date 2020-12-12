@@ -3,7 +3,7 @@ layout: home
 title: Home
 landing-title: Créations
 description: null
-image: null
+image: assets/peintures/chevalet_peinture_pinceaux.jpg
 author: null
 show_tile: false
 ---
