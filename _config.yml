@@ -15,7 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # homepage tiles
 tiles-source: categories # accepts "posts" or "pages" or "categories"
-tiles-count: 7
+tiles-count: 8
 
 collections:
   categories:
