@@ -5,4 +5,4 @@ titre: Wallis et Futuna
 ordre: 10
 ---
 
-<!-- Décommenter pour ajouter une description -->
+<!-- Décommenter pour ajouter une description
