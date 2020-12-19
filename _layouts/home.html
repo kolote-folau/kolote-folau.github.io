@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
+	Lens by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -8,48 +8,44 @@
 
 {% include head.html %}
 
-<body>
+    <body id="home">
 
-    {% include header.html %}
+        <!-- Main -->
+        <div id="main">
 
-    <!-- Banner -->
-    <section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-            </header>
-            <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
-                <!-- <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
-                </ul> -->
-            </div>
+        {% include header.html %}
+        
+        {% assign categories = site.categories | sort: "ordre" %}
+        <section id="thumbnails">
+        {% for category in categories %}
+
+        {% capture path %}peintures/{{ category.code }}{% endcapture %}
+        {% for peinture in site.static_files %}
+            {% if peinture.path contains path %}
+            {% assign image = peinture.path %}
+            {% break %}
+            {% endif %}
+        {% endfor %}
+
+        <article>
+            <a class="thumbnail" href="{{ category.url }}" data-position="left center">
+                <img src="{{ image }}" alt="" />
+                <div class="overlay">
+                    <h2>{{ category.titre }}</h2>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+        </section>
+
+        {% include footer.html %}
+
         </div>
-    </section>
 
-    <!-- Main -->
-    <div id="main">
+        <!-- Scripts -->
+        <!-- <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+        <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script> -->
+        <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}></script><![endif]-->
 
-        <!-- One -->
-        {% include tiles.html %}
-
-        <!-- Two -->
-        <!-- <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>Massa libero</h2>
-                </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="landing.html" class="button next">Get Started</a></li>
-                </ul>
-            </div>
-        </section> -->
-
-    </div>
-
-    {% include footer.html %}
-
-</body>
-
+    </body>
 </html>

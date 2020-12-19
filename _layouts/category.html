@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
+	Lens by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -8,36 +8,37 @@
 
 {% include head.html %}
 
-<body>
+    <body class="is-loading-0 is-loading-1 is-loading-2">
 
-    {% include header.html %} 
+        <!-- Main -->
+        <div id="main">
 
-<!-- Main -->
-<div id="main" class="alt">
-
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		
-		{{ content }}
-
+        {% include header.html %}
+        
 		{% capture path %}peintures/{{ page.code }}{% endcapture %}
-		{% for peinture in site.static_files %}
-			{% if peinture.path contains path %}
-				<img src="{{ peinture.path }}" alt="{{ page.titre }}" />
+        <section id="thumbnails">
+        {% for peinture in site.static_files %}
+            {% if peinture.path contains path %}
+            <article>
+                <a class="thumbnail" href="{{ peinture.path }}" data-position="left center">
+                    <img src="{{ peinture.path }}" alt="" />
+                </a>
+                    <!-- <h2>{{ page.titre }}</h2>
+                    <p>{{ content }}</p> -->
+            </article>
 			{% endif %}
-		{% endfor %}
-		
-	</div>
-</section>
+        {% endfor %}
+        </section>
 
-</div>
+        {% include footer.html %}
 
-    {% include footer.html %}
+        </div>
 
-</body>
+        <!-- Scripts -->
+        <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+        <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+        <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}></script><![endif]-->
+        <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 
+    </body>
 </html>
