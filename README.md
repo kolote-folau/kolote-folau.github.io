@@ -27,6 +27,9 @@ code: afrique
 titre: Afrique
 ordre: 20
 ---
+
+Si du texte est ajouté ici il sera affiché comme description sur la page de la catégorie
+
 ```
 - `layout`: toujours laisser à la valeur `category`
 - `code`: le code comme expliqué précédement (sans espaces)
