@@ -1,5 +1,7 @@
 # Kolote Folau - Gallerie
 
+Accéder au site en ligne : https://kolote-folau.github.io/
+
 Site statique généré avec [Jekyll](https://jekyllrb.com/).  
 Hebergé et déployé automatiquement avec [GitHub Pages](https://pages.github.com/).  
 Thème de base personnalisé à partir de [Lens](https://github.com/andrewbanchich/lens-jekyll-theme).  
