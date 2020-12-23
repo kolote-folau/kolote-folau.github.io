@@ -18,7 +18,7 @@ background: linear-gradient(0deg, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 10
   transition: opacity 500ms;
 }
 
-#thumbnails article .thumbnail {
+#thumbnails article .thumbnail:hover {
   opacity: 1;
 }
 
