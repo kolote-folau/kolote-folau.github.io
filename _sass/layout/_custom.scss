@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 #back {
   margin-bottom: 18px;
 }
@@ -28,13 +32,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0,0,0,0.8);
         transition: background-color 500ms;
+        background-color: rgba(255, 255, 255, 0.4);
   
         & h2 {
           display: block;
           margin: 0;
           color: _palette(fg-bold);
+          font-size: 24px;
           transition: color 500ms;
         }
       }
@@ -52,8 +57,15 @@
   }
 }
 
-#header h2 {
-  color: _palette(accent);
+#header {
+  h2 {
+    color: _palette(accent);
+  }
+
+  p {
+    max-width: 800px;
+    display: inline-block;
+  }
 }
 
 #viewer .slide .image {

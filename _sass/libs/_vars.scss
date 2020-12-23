@@ -2,7 +2,7 @@
 	$misc: (
 		z-index-base:		10000,
 		main-side:			right,
-		main-align:			right,
+		main-align:			left,
 		thumbnails-per-row:	2
 	);
 
@@ -35,11 +35,11 @@
 
 // Palette.
 	$palette: (
-		page-bg:			black,
-		bg:					  black,
-		fg:					  #aaa,
-		fg-bold:			#eee, 
-		fg-light:			#777,  
+		page-bg:			rgba(231,240,253,1),
+		bg:					  rgba(231,240,253,1),
+		fg:					  #555, 
+		fg-bold:			white, 
+		fg-light:			white,  
 		border:				#ccc,
 		accent:				#a5f18f 
 	);

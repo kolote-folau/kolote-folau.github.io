@@ -48,10 +48,10 @@
 			}
 
 			&:before {
-				@include vendor('background-image', (
-					'linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0))',
-					'linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0))'
-				));
+				// @include vendor('background-image', (
+				// 	'linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0))',
+				// 	'linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0))'
+				// ));
 				content: '';
 				display: block;
 				position: absolute;
@@ -119,9 +119,9 @@
 			z-index: 1;
 
 			.caption {
-				@include vendor('background-image', (
-					'linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0))',
-				));
+				// @include vendor('background-image', (
+				// 	'linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0))',
+				// ));
 				@include padding(2em, 2em);
 				position: absolute;
 				bottom: 0;
