@@ -22,7 +22,7 @@ background: linear-gradient(0deg, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 10
 }
 
 #header h2 {
-    color: #white;
+    color: white;
 }
 
 #header h1 {
@@ -31,5 +31,13 @@ background: linear-gradient(0deg, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 10
 
 #thumbnails article {
     background: none;
+}
+
+p {
+    color: white;
+}
+
+#home #thumbnails .thumbnail .overlay h2 {
+    color: black;
 }
 
