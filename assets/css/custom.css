@@ -1,3 +1,25 @@
 /*
  * Fix moche et rapide pour surcharger le css sans utiliser Sass.
  */
+
+body {
+background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 100%);
+}
+
+#home #thumbnails .thumbnail .overlay {
+    background: rgb(2,0,36);
+    transition: background-color 500ms;
+}
+
+#thumbnails article .thumbnail {
+  color: black;
+}
+
+#header h2 {
+    color: #white;
+}
+
+#header h1 {
+    color: #a5f18f;
+}
