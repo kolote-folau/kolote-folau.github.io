@@ -1,6 +1,5 @@
 ---
 layout: home
-titre: Gallerie
 ---
 
 Kolote Folau (*Claude voyage* en Wallisien) est une excursion dans les différents lieux et souvenirs figurant dans la collection des toiles de mon père.  
