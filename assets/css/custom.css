@@ -8,8 +8,7 @@ background: linear-gradient(0deg, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 10
 }
 
 #home #thumbnails .thumbnail .overlay {
-    background: rgb(2,0,36);
-    transition: background-color 500ms;
+    background: none;
 }
 
 #thumbnails article .thumbnail {
