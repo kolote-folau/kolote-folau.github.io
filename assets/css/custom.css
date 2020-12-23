@@ -2,9 +2,9 @@
  * Fix moche et rapide pour surcharger le css sans utiliser Sass.
  */
 
-body {
+#main {
 background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 100%);
+background: linear-gradient(0deg, rgba(231,240,253,1) 0%, rgba(128,187,254,1) 100%);
 }
 
 #home #thumbnails .thumbnail .overlay {
@@ -14,6 +14,12 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(231,240,253,1) 0%, rgb
 
 #thumbnails article .thumbnail {
   color: black;
+  opacity: 0.3;
+  transition: opacity 500ms;
+}
+
+#thumbnails article .thumbnail {
+  opacity: 1;
 }
 
 #header h2 {
@@ -23,3 +29,8 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(231,240,253,1) 0%, rgb
 #header h1 {
     color: #a5f18f;
 }
+
+#thumbnails article {
+    background: none;
+}
+
