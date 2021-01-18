@@ -83,3 +83,12 @@ a {
   border-bottom: solid 0;
   transition: color 500ms;
 }
+
+#viewer .slide .caption {
+  background: linear-gradient(0deg, rgba(128,187,254,1) 0%, rgba(128,187,254,0) 100%);
+
+  h2 {
+    color: _palette(fg-light);
+    margin: 0;
+  }
+}

@@ -23,8 +23,7 @@
                 <a class="thumbnail" href="{{ peinture.path }}" data-position="left center">
                     <img src="{{ peinture.path }}" alt="" />
                 </a>
-                    <!-- <h2>{{ page.titre }}</h2>
-                    <p>{{ content }}</p> -->
+                <h2>{{ peinture.basename | replace: "_", " " }}</h2>
             </article>
 			{% endif %}
         {% endfor %}

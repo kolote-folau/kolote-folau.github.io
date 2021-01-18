@@ -953,4 +953,10 @@ a {
   border-bottom: solid 0;
   transition: color 500ms; }
 
+#viewer .slide .caption {
+  background: linear-gradient(0deg, #80bbfe 0%, rgba(128, 187, 254, 0) 100%); }
+  #viewer .slide .caption h2 {
+    color: white;
+    margin: 0; }
+
 /*# sourceMappingURL=main.css.map */
