@@ -10,65 +10,43 @@ html, body, #main {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
+
+
+
+
+
+
+
+
+
 #header h2, p {
-    color: white;
+    color: #469dff;
+    
 }
 
-
-#thumbnails article {
-    background: none;
-}
-
-#header h1 {
-    color: #a5f18f;
-    text-shadow: 1px 1px 2px black;
--webkit-text-stroke-width: 0.5px;
--webkit-text-stroke-color: #295f00;
-}
-#header h2, p {
-    color: white;
-    text-shadow: 1px 1px 2px black;
-
-}
-
-p {
-  display:flex;
-  background-color:#fff;
-  padding:20px;
-  border-radius:30px;
-  min-width:40px;
-  max-width:420px;
-  min-height:40px;
-  margin:20px;
-  position:relative;
-  /*align-items:center;*/
-  /*justify-content:center;*/
-  /*text-align:center;*/
-}
-p:before,
-p:after {
-  content:"";
-  background-color:#fff;
-  border-radius:50%;
-  display:block;
-  position:absolute;
-  z-index:-1;
-}
-p:before {
-  width:44px;
-  height:44px;
-  top:-12px;
-  left:28px;
-  box-shadow:-50px 30px 0 -12px #fff;
-}
-p:after {
-  bottom:-10px;
-  right:26px;
-  width:30px;
-  height:30px;
-  box-shadow:40px -34px 0 0 #fff,
-             -28px -6px 0 -2px #fff,
-             -24px 17px 0 -6px #fff,
-             -5px 25px 0 -10px #fff;
+#home #thumbnails .thumbnail .overlay {
+  box-shadow: inset 0px 0px 50px black;
+  background: transparent;
+  border-radius: 10px;
   
+}
+
+#home #thumbnails .thumbnail .overlay h2 {
+text-shadow: 1px 1px 2px black;
+}
+#thumbnails article .thumbnail {
+  border-radius: 10px;
+}
+
+#thumbnails article .thumbnail img {
+    border-radius: 10px;
+}
+
+#home #thumbnails .thumbnail .overlay {
+    transition: background-color 500ms, box-shadow 500ms;
+}
+
+#home #thumbnails .thumbnail .overlay:hover {
+    box-shadow:none;
+    background: transparent;
 }
