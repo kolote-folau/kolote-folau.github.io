@@ -18,14 +18,15 @@ html, body, #main {
 
 
 
-
 #header h2, p {
-    color: #469dff;
+    color: black;
+text-shadow: 0px 0px 15px white, 1px 1px 2px white, -1px -1px 2px white;
+
     
 }
 
 #home #thumbnails .thumbnail .overlay {
-  box-shadow: inset 0px 0px 50px black;
+  box-shadow: inset 5px 5px 100px black;
   background: transparent;
   border-radius: 10px;
   
@@ -49,4 +50,71 @@ text-shadow: 1px 1px 2px black;
 #home #thumbnails .thumbnail .overlay:hover {
     box-shadow:none;
     background: transparent;
+}
+
+
+    #thumbnails article {
+    background: none;
+}
+
+#header h1 {
+    color: #a5f18f;
+    text-shadow: 1px 1px 2px black;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #295f00;
+}
+
+
+#viewer .slide .caption h2 {
+  display:flex;
+  background-color:#ffffffc9;
+  padding:5px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:420px;
+  min-height:40px;
+  margin:20px;
+  position:relative;
+  /*align-items:center;*/
+  justify-content:center;
+  /*text-align:center;*/
+
+}/*
+#viewer .slide .caption h2:before,
+#viewer .slide .caption h2:after {
+  content:"";
+  background-color:#ffffffc9;
+  border-radius:50%;
+  display:block;
+  position:absolute;
+  z-index:-1;
+
+}
+#viewer .slide .caption h2:before {
+  width:44px;
+  height:44px;
+  top:-12px;
+  left:28px;
+  box-shadow:-50px 30px 0 -12px #ffffffc9;
+
+}
+#viewer .slide .caption h2:after{
+  bottom:-10px;
+  right:26px;
+  width:30px;
+  height:30px;
+  box-shadow:40px -34px 0 0 #ffffffc9,
+             -28px -6px 0 -2px #ffffffc9,
+             -24px 17px 0 -6px #ffffffc9,
+             -5px 25px 0 -10px #ffffffc9;
+}*/
+
+#viewer .slide .caption {
+    background: none;
+}
+
+#viewer .slide .caption h2 {
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    
 }
